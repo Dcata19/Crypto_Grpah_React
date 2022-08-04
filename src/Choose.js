@@ -1,12 +1,9 @@
 import React from 'react'
 
-export default function Choose({ setItems }) {
-
-    const dom = document.getElementById('container');
+export default function Choose({ setItems, dom }) {
     
     function handleChange(event) {
         dom.innerText = '';
-        console.log(event.currentTarget.id);
         setItems(event.currentTarget.id)
     }
 
