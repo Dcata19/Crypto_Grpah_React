@@ -14,6 +14,7 @@ export default function App() {
   }
 
   useEffect(() => {
+
     const chartProperties = {
       timeScale: {
         timeVisible: true,
@@ -42,7 +43,7 @@ export default function App() {
       <button className="btn btn-success" onClick={handleChange}>Show</button>
       <input type="text" className="form-control" placeholder="Type a symbol..." ref={coin} defaultValue={items}></input>
     </div>
-    <Choose setItems={setItems} />
+    <Choose setItems={setItems} dom={dom} />
     </>
   );
 }
